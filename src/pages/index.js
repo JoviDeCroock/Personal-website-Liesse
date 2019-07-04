@@ -18,6 +18,7 @@ import full03 from '../assets/images/fulls/03.jpg'
 import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
+import SkillIndicator from '../components/SkillIndicator';
 
 const DEFAULT_IMAGES = [
     { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
@@ -100,6 +101,20 @@ class HomeIndex extends React.Component {
                         <ul className="actions">
                             <li><a href="#" className="button">Learn More</a></li>
                         </ul>
+                        <div className="skills">
+                            <h1 className="chapterTitle">Skills</h1>
+                            <h2 className="skillsTitle">Language</h2>
+                            <SkillIndicator title="Dutch" level={10} />
+                            <SkillIndicator title="English" level={8} />
+                            <SkillIndicator title="French" level={6} />
+                            <h2 className="skillsTitle">ICT</h2>
+                            <SkillIndicator title="AutoCad" level={8} />
+                            <SkillIndicator title="Adobe Photoshop" level={7.5} />
+                            <SkillIndicator title="Adobe InDesign" level={7.5} />
+                            <SkillIndicator title="Sketchup" level={7.5} />
+                            <SkillIndicator title="Revit" level={7.5} />
+                            <SkillIndicator title="Rhinoceros" level={5} />
+                        </div>
                     </section>
                     <section id="two">
                         <h2>Recent Work</h2>

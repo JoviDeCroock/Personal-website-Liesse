@@ -13,7 +13,10 @@
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
-    "react-images": "^0.5.19"
+    "react-images": "^0.5.19",
+    "react-intersection-observer": "^8.23.0",
+    "react-spring": "^7.2.8",
+    "styled-components": "4.3.2"
   },
   "keywords": [
     "gatsby"
