@@ -529,7 +529,7 @@
 		&.fit {
 			display: block;
 			margin: 0 0 _size(element-margin) 0;
-			width: 100%;
+			width: 90%;
 
 			img {
 				width: 100%;
@@ -943,7 +943,7 @@
 
 		.image.avatar {
 			margin: 0 0 (_size(element-margin) * 0.5) 0;
-			width: 6.25em;
+			width: 8em;
 		}
 	}
 
@@ -1474,14 +1474,6 @@
 					}
 				}
 			}
-
-		.skillsTitle {
-			margin-bottom: 6px;
-		}
-
-		.chapterTitle {
-			margin-bottom: 12px;
-		}
 
 		/* Footer */
 

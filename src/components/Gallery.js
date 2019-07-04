@@ -3,86 +3,58 @@ import React, { Component } from 'react';
 import Lightbox from 'react-images';
 
 class Gallery extends Component {
-    constructor () {
-        super();
+    state = {
+        lightboxIsOpen: false,
+        currentImage: 0,
+    };
 
-        this.state = {
-            lightboxIsOpen: false,
-            currentImage: 0,
-        };
+    openLightbox = (i, e) => {
+        e.preventDefault();
+        this.setState({ currentImage: i, lightboxIsOpen: true });
+    }
 
-        this.closeLightbox = this.closeLightbox.bind(this);
-        this.gotoNext = this.gotoNext.bind(this);
-        this.gotoPrevious = this.gotoPrevious.bind(this);
-        this.gotoImage = this.gotoImage.bind(this);
-        this.handleClickImage = this.handleClickImage.bind(this);
-        this.openLightbox = this.openLightbox.bind(this);
+    closeLightbox = () => {
+        this.setState({ currentImage: 0, lightboxIsOpen: false });
     }
-    openLightbox (index, event) {
-        event.preventDefault();
-        this.setState({
-            currentImage: index,
-            lightboxIsOpen: true,
-        });
+
+    gotoPrevious = () => {
+        this.setState({ currentImage: this.state.currentImage - 1 });
     }
-    closeLightbox () {
-        this.setState({
-            currentImage: 0,
-            lightboxIsOpen: false,
-        });
+
+    gotoNext = () => {
+        this.setState({ currentImage: this.state.currentImage + 1 });
     }
-    gotoPrevious () {
-        this.setState({
-            currentImage: this.state.currentImage - 1,
-        });
+
+    gotoImage = (i) => {
+        this.setState({ currentImage: i });
     }
-    gotoNext () {
-        this.setState({
-            currentImage: this.state.currentImage + 1,
-        });
-    }
-    gotoImage (index) {
-        this.setState({
-            currentImage: index,
-        });
-    }
-    handleClickImage () {
+
+    handleClickImage = () => {
         if (this.state.currentImage === this.props.images.length - 1) return;
-
         this.gotoNext();
     }
-    renderGallery () {
-        const { images } = this.props;
 
-        if (!images) return;
-
-        const gallery = images.map((obj, i) => {
-            return (
-                <article className="6u 12u$(xsmall) work-item" key={i}>
-                    <a
-                        className="image fit thumb"
-                        href={obj.src}
-                        onClick={(e) => this.openLightbox(i, e)}
-                    >
-                        <img src={obj.thumbnail} />
-                    </a>
-
-                    <h3>{obj.caption}</h3>
-                    <p>{obj.description}</p>
-                </article>
-            );
-        });
-
-        return (
-            <div className="row">
-                {gallery}
-            </div>
-        );
-    }
     render () {
+        const { images } = this.props;
         return (
             <div>
-                {this.renderGallery()}
+                <div className="row">
+                    {images ?
+                        images.map((obj, i) => (
+                            <article className="6u 12u$(xsmall) work-item" key={i}>
+                                <a
+                                    className="image fit thumb"
+                                    href={obj.src}
+                                    onClick={(e) => this.openLightbox(i, e)}
+                                >
+                                    <img alt="thumbnail" src={obj.thumbnail} />
+                                </a>
+
+                                <h3>{obj.caption}</h3>
+                                <p>{obj.description}</p>
+                            </article>
+                        )) : <React.Fragment />}
+                </div>
                 <Lightbox
                     currentImage={this.state.currentImage}
                     images={this.props.images}

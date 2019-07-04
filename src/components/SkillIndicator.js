@@ -4,14 +4,14 @@ import { Spring } from 'react-spring'
 import { InView } from 'react-intersection-observer'
 
 const BarWrapper = styled.div`
-  border: 1px solid black;
+  border: 1px solid #a2a2a2;
   border-radius: 10px;
   height: 12px;
   width: 100%;
 `
 
 const Indicator = styled.div`
-  background-color: #000;
+  background-color: #787878;
   border: 1px solid transparent;
   border-radius: 10px;
   height: 100%;
