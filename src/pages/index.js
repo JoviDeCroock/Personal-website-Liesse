@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { useTranslation } from 'react-i18next';
 
+import '../localization/i18n';
 import Layout from '../components/layout'
 
 import Skills from './Skills';
@@ -9,21 +11,30 @@ import Contact from './Contact';
 import Projects from './Projects';
 
 const siteTitle = "Liesse Swinnen"
-const siteDescription = "Belgian engineering architect"
 
-const HomeIndex = () => (
-    <Layout>
-        <Helmet>
-            <title>{siteTitle}</title>
-            <meta name="description" content={siteDescription} />
-        </Helmet>
-        <div id="main">
-            <Introduction />
-            <Skills />
-            <Projects />
-            <Contact />
-        </div>
-    </Layout>
-)
+const HomeIndex = () => {
+    const [language, setLanguage] = React.useState('en');
+    const prevLanguage = React.useRef(language);
+    const { t, i18n } = useTranslation();
+
+    React.useEffect(() => {
+        if (prevLanguage.current !== language) i18n.changeLanguage(language);
+    }, [language]);
+
+    return (
+        <Layout language={language} setLanguage={setLanguage}>
+            <Helmet>
+                <title>{siteTitle}</title>
+                <meta name="description" content={t('siteDescription')} />
+            </Helmet>
+            <div id="main">
+                <Introduction />
+                <Skills />
+                <Projects />
+                <Contact />
+            </div>
+        </Layout>
+    )
+}
 
 export default HomeIndex

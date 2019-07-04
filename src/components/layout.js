@@ -3,9 +3,9 @@ import '../assets/scss/main.scss'
 
 import Header from './Header'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, language, setLanguage }) => (
     <div>
-        <Header />
+        <Header language={language} setLanguage={setLanguage} />
         {children}
     </div>
 )
