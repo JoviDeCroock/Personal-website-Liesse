@@ -10,7 +10,7 @@ class Gallery extends Component {
 
     openLightbox = (i, e) => {
         e.preventDefault();
-        this.setState({ currentImage: i, lightboxIsOpen: true });
+        this.setState({ currentImage: 0, lightboxIsOpen: i });
     }
 
     closeLightbox = () => {
@@ -41,30 +41,32 @@ class Gallery extends Component {
                 <div className="row">
                     {images ?
                         images.map((obj, i) => (
-                            <article className="6u 12u$(xsmall) work-item" key={i}>
-                                <a
-                                    className="image fit thumb"
-                                    href={obj.src}
-                                    onClick={(e) => this.openLightbox(i, e)}
-                                >
-                                    <img alt="thumbnail" src={obj.thumbnail} />
-                                </a>
+                            <React.Fragment key={i}>
+                                <article className="6u 12u$(xsmall) work-item" key={i}>
+                                    <a
+                                        className="image fit thumb"
+                                        href={obj.thumbnail}
+                                        onClick={(e) => this.openLightbox(i, e)}
+                                    >
+                                        <img alt="thumbnail" src={obj.thumbnail} />
+                                    </a>
 
-                                <h3>{obj.caption}</h3>
-                                <p>{obj.description}</p>
-                            </article>
+                                    <h3>{obj.caption}</h3>
+                                    <p>{obj.description}</p>
+                                </article>
+                                <Lightbox
+                                    currentImage={this.state.currentImage}
+                                    images={obj.additionalImages}
+                                    isOpen={this.state.lightboxIsOpen === i}
+                                    onClickImage={this.handleClickImage}
+                                    onClickNext={this.gotoNext}
+                                    onClickPrev={this.gotoPrevious}
+                                    onClickThumbnail={this.gotoImage}
+                                    onClose={this.closeLightbox}
+                                />
+                        </React.Fragment>
                         )) : <React.Fragment />}
                 </div>
-                <Lightbox
-                    currentImage={this.state.currentImage}
-                    images={this.props.images}
-                    isOpen={this.state.lightboxIsOpen}
-                    onClickImage={this.handleClickImage}
-                    onClickNext={this.gotoNext}
-                    onClickPrev={this.gotoPrevious}
-                    onClickThumbnail={this.gotoImage}
-                    onClose={this.closeLightbox}
-                />
             </div>
         );
     }
