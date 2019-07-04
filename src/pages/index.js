@@ -81,8 +81,8 @@ class HomeIndex extends React.Component {
         return (
             <Layout>
                 <Helmet>
-                        <title>{siteTitle}</title>
-                        <meta name="description" content={siteDescription} />
+                    <title>{siteTitle}</title>
+                    <meta name="description" content={siteDescription} />
                 </Helmet>
                 <div id="main">
                     <section id="one">
@@ -101,22 +101,20 @@ class HomeIndex extends React.Component {
                             <li><a href="#" className="button">Learn More</a></li>
                         </ul>
                     </section>
-
                     <section id="two">
                         <h2>Recent Work</h2>
-
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
-                            src,
-                            thumbnail,
-                            caption,
-                            description
-                        }))} />
-
+                        <Gallery
+                            images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
+                                src,
+                                thumbnail,
+                                caption,
+                                description
+                            }))}
+                        />
                         <ul className="actions">
                             <li><a href="#" className="button">Full Portfolio</a></li>
                         </ul>
                     </section>
-
                     <section id="three">
                         <h2>Get In Touch</h2>
                         <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
@@ -137,13 +135,13 @@ class HomeIndex extends React.Component {
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        1234 Legerbos<br />
+                                        Legerbosstraat 18<br />
                                         Meise, 1860<br />
                                         Belgium
                                     </li>
                                     <li>
                                         <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        TODO number
+                                        +324 75 744 466
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
@@ -153,9 +151,7 @@ class HomeIndex extends React.Component {
                             </div>
                         </div>
                     </section>
-
                 </div>
-
             </Layout>
         )
     }
