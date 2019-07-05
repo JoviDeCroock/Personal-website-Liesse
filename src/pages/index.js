@@ -28,6 +28,7 @@ const HomeIndex = () => {
         <Layout language={language} setLanguage={setLanguage}>
             <Helmet>
                 <title>{siteTitle}</title>
+                <html lang={language} />
                 <meta name="description" content={t('siteDescription')} />
             </Helmet>
             <div id="main">
