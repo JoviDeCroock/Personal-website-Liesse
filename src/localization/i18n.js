@@ -6,17 +6,23 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
-      'siteDescription': 'Belgian engineering architect'
+      'belgium': 'Belgium',
+      'engineeringArchitecture': 'Architect Engineer',
+      'siteDescription': 'Belgian engineering architect',
     }
   },
   nl: {
     translation: {
-      'siteDescription': 'Belgische ingenieur architect'
+      'belgium': 'België',
+      'engineeringArchitecture': 'Architect Ingenieur',
+      'siteDescription': 'Belgische ingenieur architect',
     }
   },
   fr: {
     translation: {
-      'siteDescription': "Architecte d'ingénierie belge"
+      'belgium': 'Belgique',
+      'engineeringArchitecture': 'Ingénieur Architecte',
+      'siteDescription': "Architecte d'ingénierie belge",
     }
   }
 };

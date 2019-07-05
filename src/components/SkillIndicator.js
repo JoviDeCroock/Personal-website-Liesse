@@ -31,9 +31,7 @@ const SkillIndicator = ({ title, level: finalLevel }) => {
   const [show, setShow] = React.useState(false);
 
   const onChange = React.useCallback(inView => {
-    if (inView) {
-      setShow(() => inView);
-    }
+    if (inView) setShow(() => inView);
   }, [])
 
   return (
