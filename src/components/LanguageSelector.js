@@ -4,6 +4,9 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: flex;
   justify-content: flex-end;
+  @media screen and (max-width: 980px) {
+    justify-content: center;
+  }
 `;
 
 const Option = styled.p`
