@@ -13,7 +13,7 @@ import Projects from './Projects';
 const siteTitle = "Liesse Swinnen"
 
 const HomeIndex = () => {
-    const [language, setLanguage] = React.useState('en');
+    const [language, setLanguage] = React.useState('nl');
     const prevLanguage = React.useRef(language);
     const { t, i18n } = useTranslation();
 
