@@ -18,7 +18,10 @@ const HomeIndex = () => {
     const { t, i18n } = useTranslation();
 
     React.useEffect(() => {
-        if (prevLanguage.current !== language) i18n.changeLanguage(language);
+        if (prevLanguage.current !== language) {
+            i18n.changeLanguage(language);
+            prevLanguage.current = language;
+        }
     }, [language]);
 
     return (

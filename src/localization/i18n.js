@@ -6,23 +6,44 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
-      'belgium': 'Belgium',
-      'engineeringArchitecture': 'Architect Engineer',
-      'siteDescription': 'Belgian engineering architect',
+      address: 'Address',
+      belgium: 'Belgium',
+      engineeringArchitecture: 'Architect Engineer',
+      getInTouch: 'Get in touch',
+      intro: "Liesse is cool m'kay",
+      introTitle: 'About Liesse',
+      phone: 'Phone',
+      recentWork: 'Recent work',
+      skills: 'Skills',
+      siteDescription: 'Belgian engineering architect',
     }
   },
   nl: {
     translation: {
-      'belgium': 'België',
-      'engineeringArchitecture': 'Architect Ingenieur',
-      'siteDescription': 'Belgische ingenieur architect',
+      address: 'Adres',
+      belgium: 'België',
+      engineeringArchitecture: 'Architect Ingenieur',
+      getInTouch: 'Neem contact op',
+      intro: "Liesse is cool m'kay",
+      introTitle: 'Over Liesse',
+      phone: 'Telefoon',
+      recentWork: 'Recent werk',
+      skills: 'Vaardigheden',
+      siteDescription: 'Belgische ingenieur architect',
     }
   },
   fr: {
     translation: {
-      'belgium': 'Belgique',
-      'engineeringArchitecture': 'Ingénieur Architecte',
-      'siteDescription': "Architecte d'ingénierie belge",
+      address: 'Adresse',
+      belgium: 'Belgique',
+      engineeringArchitecture: 'Ingénieur Architecte',
+      getInTouch: 'Entrer en contact',
+      intro: "Liesse est cool m'kay",
+      introTitle: 'À propos de Liesse',
+      phone: 'Téléphone',
+      recentWork: 'Travail récent',
+      skills: 'Compétences',
+      siteDescription: "Architecte d'ingénierie belge",
     }
   }
 };

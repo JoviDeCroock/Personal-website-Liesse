@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 import Footer from './Footer'
 import avatar from '../assets/images/avatar.jpg'
