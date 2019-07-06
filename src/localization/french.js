@@ -3,7 +3,7 @@ export default {
     address: 'Adresse',
     belgium: 'Belgique',
     engineeringArchitecture: 'Ingénieur Architecte',
-    getInTouch: 'Entrer en contact',
+    getInTouch: 'Contactez-moi',
     intro: "Liesse est cool m'kay",
     introTitle: 'À propos de Liesse',
     phone: 'Téléphone',

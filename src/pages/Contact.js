@@ -17,7 +17,7 @@ const Contact = () => {
                         </li>
                         <li>
                             <h3 className="icon fa-mobile"><span className="label">{t('phone')}</span></h3>
-                            +324 75 744 466
+                            +324 75 74 44 66
                         </li>
                         <li>
                             <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
