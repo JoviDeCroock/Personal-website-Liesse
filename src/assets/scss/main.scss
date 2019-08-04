@@ -901,9 +901,8 @@
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
 		@include vendor('justify-content', 'space-between');
-		background-color:		_palette(accent2, bg);
+		background-color:		#bdc8ca;
 		background-attachment:	scroll,								fixed;
-		background-image:		url('images/overlay.png'),			url('../images/bg.jpg');
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		auto,								auto 100%;
@@ -926,16 +925,20 @@
 			margin: 0 0 ($size-header-pad * 0.5) 0;
 		}
 
+		p {
+			color: _palette(accent2, fg)
+		}
+
 		strong, b {
-			color: _palette(accent2, fg-bold);
+			color: _palette(accent2, fg);
 		}
 
 		h2, h3, h4, h5, h6 {
-			color: _palette(accent2, fg-bold);
+			color: _palette(accent2, fg);
 		}
 
 		h1 {
-			color: _palette(accent2, fg);
+			color: _palette(accent2, fg-bold);
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
