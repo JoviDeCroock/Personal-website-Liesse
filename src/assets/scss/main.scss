@@ -925,16 +925,8 @@
 			margin: 0 0 ($size-header-pad * 0.5) 0;
 		}
 
-		p {
-			color: _palette(accent2, fg)
-		}
-
-		strong, b {
-			color: _palette(accent2, fg);
-		}
-
-		h2, h3, h4, h5, h6 {
-			color: _palette(accent2, fg);
+		strong, b, h2, h3, h4, h5, h6, p {
+			color: _palette(accent2, fg-bold);
 		}
 
 		h1 {
@@ -957,12 +949,12 @@
 			margin: (_size(element-margin) * 0.5) 0 0 0;
 
 			a {
-				color: _palette(accent2, fg-light);
+				color: _palette(accent2, fg);
 			}
 		}
 
 		.copyright {
-			color: _palette(accent2, fg-light);
+			color: _palette(accent2, fg);
 			font-size: 0.8em;
 			list-style: none;
 			margin: (_size(element-margin) * 0.5) 0 0 0;

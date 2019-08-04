@@ -76,7 +76,7 @@
 		}
 
 		p {
-			color: _palette(accent2, fg)
+			color: _palette(accent2, fg-bold)
 		}
 	}
 
@@ -85,7 +85,7 @@
 	#footer {
 		.icons {
 			a {
-				color: _palette(accent2, fg-bold);
+				color: _palette(accent2, fg);
 			}
 		}
 	}
