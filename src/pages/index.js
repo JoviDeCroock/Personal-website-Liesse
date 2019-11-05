@@ -6,7 +6,7 @@ import '../localization/i18n';
 import Layout from '../components/layout'
 
 import Skills from './Skills';
-import Introduction from './Introduction';
+// import Introduction from './Introduction';
 import Contact from './Contact';
 import Projects from './Projects';
 
@@ -32,7 +32,7 @@ const HomeIndex = () => {
                 <meta name="description" content={t('siteDescription')} />
             </Helmet>
             <div id="main">
-                <Introduction />
+                {/* <Introduction /> */}
                 <Skills />
                 <Projects />
                 <Contact />
