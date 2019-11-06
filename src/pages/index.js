@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next'
 import '../localization/i18n'
 import Layout from '../components/layout'
 
-import Skills from './Skills'
+import Skills from '../areas/Skills'
 // import Introduction from './Introduction';
-import Contact from './Contact'
-import Projects from './Projects'
+import Contact from '../areas/Contact'
+import Projects from '../areas/Projects'
 
 const siteTitle = 'Liesse Swinnen'
 
