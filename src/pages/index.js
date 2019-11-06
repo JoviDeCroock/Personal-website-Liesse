@@ -22,7 +22,7 @@ const HomeIndex = () => {
             i18n.changeLanguage(language);
             prevLanguage.current = language;
         }
-    }, [language]);
+    }, [language, i18n]);
 
     return (
         <Layout language={language} setLanguage={setLanguage}>
