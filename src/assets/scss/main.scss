@@ -901,7 +901,7 @@
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
 		@include vendor('justify-content', 'space-between');
-		background-color:		#cad6dd;
+		background-color:		#a3b8c4;
 		background-attachment:	scroll,								fixed;
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
@@ -949,12 +949,12 @@
 			margin: (_size(element-margin) * 0.5) 0 0 0;
 
 			a {
-				color: _palette(accent2, fg);
+				color: _palette(accent2, fg-bold);
 			}
 		}
 
 		.copyright {
-			color: _palette(accent2, fg);
+			color: _palette(accent2, fg-bold);
 			font-size: 0.8em;
 			list-style: none;
 			margin: (_size(element-margin) * 0.5) 0 0 0;
