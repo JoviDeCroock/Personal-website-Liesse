@@ -10,5 +10,5 @@ export default {
     recentWork: 'Recent werk',
     skills: 'Vaardigheden',
     siteDescription: 'Belgische ingenieur architect',
-  }
+  },
 }

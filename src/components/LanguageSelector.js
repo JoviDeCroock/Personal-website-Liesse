@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
   display: flex;
@@ -7,19 +7,27 @@ const Wrapper = styled.div`
   @media screen and (max-width: 980px) {
     justify-content: center;
   }
-`;
+`
 
 const Option = styled.p`
   cursor: pointer;
   text-decoration: ${({ selected }) => (selected ? 'underline' : 'none')};
-`;
+`
 
 const LanguageSelector = ({ language, setLanguage }) => (
   <Wrapper>
-    <Option selected={language === 'nl'} onClick={() => setLanguage('nl')}>NL</Option>&nbsp;|&nbsp;
-    <Option selected={language === 'fr'} onClick={() => setLanguage('fr')}>FR</Option>&nbsp;|&nbsp;
-    <Option selected={language === 'en'} onClick={() => setLanguage('en')}>EN</Option>
+    <Option selected={language === 'nl'} onClick={() => setLanguage('nl')}>
+      NL
+    </Option>
+    &nbsp;|&nbsp;
+    <Option selected={language === 'fr'} onClick={() => setLanguage('fr')}>
+      FR
+    </Option>
+    &nbsp;|&nbsp;
+    <Option selected={language === 'en'} onClick={() => setLanguage('en')}>
+      EN
+    </Option>
   </Wrapper>
 )
 
-export default LanguageSelector;
+export default LanguageSelector

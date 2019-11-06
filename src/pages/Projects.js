@@ -1,11 +1,11 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
 import projects from '../constants/projects'
 import Gallery from '../components/Gallery'
 
 const Projects = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <section id="three">
       <h2>{t('recentWork')}</h2>
@@ -14,5 +14,4 @@ const Projects = () => {
   )
 }
 
-
-export default Projects;
+export default Projects

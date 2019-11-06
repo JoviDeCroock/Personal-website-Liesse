@@ -10,5 +10,5 @@ export default {
     recentWork: 'Recent work',
     skills: 'Skills',
     siteDescription: 'Belgian engineering architect',
-  }
+  },
 }

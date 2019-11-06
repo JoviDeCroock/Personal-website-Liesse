@@ -28,10 +28,10 @@ const Wrapper = styled(InView)`
 `
 
 const SkillIndicator = ({ title, level: finalLevel }) => {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = React.useState(false)
 
   const onChange = React.useCallback(inView => {
-    if (inView) setShow(() => inView);
+    if (inView) setShow(() => inView)
   }, [])
 
   return (
@@ -43,11 +43,11 @@ const SkillIndicator = ({ title, level: finalLevel }) => {
           from={{ level: 0 }}
           to={{ level: show ? finalLevel : 0 }}
         >
-          {({ level}) => <Indicator level={level} />}
+          {({ level }) => <Indicator level={level} />}
         </Spring>
       </BarWrapper>
     </Wrapper>
   )
 }
 
-export default React.memo(SkillIndicator);
+export default React.memo(SkillIndicator)

@@ -10,5 +10,5 @@ export default {
     recentWork: 'Travail récent',
     skills: 'Compétences',
     siteDescription: "Architecte d'ingénierie belge",
-  }
+  },
 }

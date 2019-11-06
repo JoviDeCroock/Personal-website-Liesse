@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Liesse Swinnen",
-    author: "Jovi De Croock",
-    description: "A Belgian engineering architect"
+    title: 'Liesse Swinnen',
+    author: 'Jovi De Croock',
+    description: 'A Belgian engineering architect',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
