@@ -7,7 +7,7 @@ export default {
     intro: "Liesse is cool m'kay",
     introTitle: 'Over Liesse',
     phone: 'Telefoon',
-    recentWork: 'Recent werk',
+    recentWork: 'Ontwerpen',
     skills: 'Vaardigheden',
     siteDescription: 'Belgische ingenieur architect',
   },
