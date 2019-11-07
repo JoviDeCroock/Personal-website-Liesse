@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Liesse Swinnen',
+    title: 'Swinnen-Architectuur',
     author: 'Jovi De Croock',
-    description: 'A Belgian engineering architect',
+    description: 'Een Belgische Ingenieur Architect',
   },
   plugins: [
+    `gatsby-plugin-preact`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,

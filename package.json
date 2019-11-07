@@ -7,11 +7,13 @@
     "gatsby": "2.17.9",
     "gatsby-plugin-manifest": "2.2.26",
     "gatsby-plugin-offline": "2.0.25",
+    "gatsby-plugin-preact": "^3.1.19",
     "gatsby-plugin-react-helmet": "3.1.13",
     "gatsby-plugin-sass": "2.1.20",
     "gatsby-plugin-styled-components": "3.1.11",
     "i18next": "17.0.6",
     "node-sass": "4.13.0",
+    "preact": "^10.0.4",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-helmet": "5.2.1",
@@ -33,5 +35,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/JoviDeCroock/Personal-Website-Liesse"
-  }
+  },
+  "homepage": "https://swinnen-architectuur.be/"
 }
